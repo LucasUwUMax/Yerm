@@ -1,7 +1,7 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/minhdepzai-v/LibraryRobloc/refs/heads/main/RedzLibrary.lua"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "Cherry Hub",
+  Title = "Cherry Hub ðŸ‘»",
   SubTitle = "v3.5 - Ghost Update ",
   SaveFolder = "CherryMM2"
 })
@@ -35,7 +35,7 @@ local playerEspEnabled = false
 local orbitTargetLoop  = false
 
 -- =============================================
--- SISTEMA DE DETECÇÃO AVANÇADA (ROLES)
+-- SISTEMA DE DETECÃ‡ÃƒO AVANÃ‡ADA (ROLES)
 -- =============================================
 local function getPlayerRole(p)
     if not p then return "Inocente" end
@@ -521,7 +521,7 @@ local function startAimbot()
 end
 
 -- =============================================
--- GERENCIADOR DE NOMES (DROPDOWNS DINÂMICOS)
+-- GERENCIADOR DE NOMES (DROPDOWNS DINÃ‚MICOS)
 -- =============================================
 local function getPlayerNames()
     local n = {}
@@ -551,11 +551,11 @@ local T4 = Window:MakeTab({"Xerife", ""})
 local T5 = Window:MakeTab({"Troll", ""})
 local T6 = Window:MakeTab({"Misc", ""})
 
-T1:AddParagraph({"Cherry Hub v3.5", "Ghost Update: Modificações e correções de Dropdowns aplicadas."})
+T1:AddParagraph({"Cherry Hub v3.5", "Ghost Update: ModificaÃ§Ãµes e correÃ§Ãµes de Dropdowns aplicadas."})
 
 -- ABA INOCENTE
 T2:AddSection({"Combate"})
-T2:AddToggle({Name="ESP Dinâmico (Cargos)", Default=false, Callback=function(v)
+T2:AddToggle({Name="ESP DinÃ¢mico (Cargos)", Default=false, Callback=function(v)
     ESP_ENABLED = v
     if not v then for _, p in pairs(Players:GetPlayers()) do removeESP(p) end end
 end})
@@ -589,7 +589,7 @@ T3:AddToggle({Name="Ativar Kill Aura", Default=false, Callback=function(v) KILLA
 
 -- ABA XERIFE
 T4:AddSection({"Mira"})
-T4:AddToggle({Name="Silent Aim Avançado (Auto Visibilidade)", Default=false, Callback=function(v)
+T4:AddToggle({Name="Silent Aim AvanÃ§ado (Auto Visibilidade)", Default=false, Callback=function(v)
     SILENT_AIM_ENABLED = v
     if v then startSilentAim() else if silentAimConn then silentAimConn:Disconnect() silentAimConn = nil end end
 end})
